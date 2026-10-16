@@ -26,13 +26,16 @@ Snapshot: **16 October 2026**. See [status and acceptance criteria](docs/status.
 | Accepted repaired surface | Recorded closed-surface audit passed; 2,114,416 triangles across 7 patches |
 | Native Blender file | Saved and reopened successfully in the recorded geometry validation |
 | Last verified saved mesh checkpoint | **3,154,323 cells** |
-| Later refinement progress | **4,498,036 cells observed in RAM**; that larger state was not saved |
-| Post-stop checkpoint audit | Passed at 15:23 Bangkok time; the saved 3,154,323-cell checkpoint matches its immutable snapshot |
+| Later refinement progress | **4,892,045-cell peak**, then **3,382,439 cells after subsetting**, observed only in RAM; neither state was saved |
+| Post-stop checkpoint audit | Passed at 23:35 Bangkok time; the saved 3,154,323-cell checkpoint still matches its immutable snapshot |
+| Latest production attempt | Stopped after 99 minutes 49 seconds by the host RAM reserve guard; no OOM event |
 | Accepted final volume mesh | Pending |
 | Flow solver | **Not started** |
 | Validated drag/downforce results | **Not available** |
 
 These images show the modified model. They are not pressure contours, wind-tunnel measurements, or evidence of aerodynamic performance.
+
+The next production launch requires at least 6.5 GiB of fresh Windows memory headroom. The finite RAM/swap limits and live 1 GiB reserve guard remain in place; transient cleanup gains do not establish that the full mesh will fit.
 
 ## Geometry details
 
