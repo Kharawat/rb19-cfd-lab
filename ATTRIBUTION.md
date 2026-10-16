@@ -33,12 +33,12 @@ The redistributed GLB was compressed/optimized with glTF-Transform and Draco and
 Phoom & OpenAI Codex co-designed and developed these project-specific adaptations:
 
 - Rescaled the artist model to an assumed nominal 2 m width, aligned it in metres, and separated editable components.
-- Reconstructed rear-wing mainplane/flap sections while retaining the artist model's rolled outer junctions and selected surrounding details.
+- Reconstructed physical rear-wing sections, then corrected the over-steep flap on 17 October 2026: central angle about 75.8 to 45 degrees, easing toward 42 degrees outboard, with coordinated mainplane, rolled-junction and support reshaping. These are reconstruction choices, not real-car measured angles.
 - Refined the floor-to-diffuser transition, roof, outer walls, and central spine with photo-informed geometry.
 - Derived a separate repaired, closed solver surface using solid union and local junction repair; kept display and solver geometry identifiable in the native project.
 - Added studio lighting/cameras, project renders, validation reports, checkpoint handling, and a resource-bounded OpenFOAM workflow.
 
-The images are existing renders of those modifications: pixels are unchanged; private machine-path metadata was removed from the public PNG copies. Original project images remain untouched. The rear-wing section chart compares the artist surface with reconstructed sections and is also provided under CC BY 4.0 with this attribution.
+The current images were rendered from the corrected model on 17 October 2026. PNG text metadata was removed from public copies; every non-text chunk, including all pixel-bearing IDAT data, is unchanged from the corresponding local render. The section chart compares the previous over-steep wing with the revised CFD sections. Model-derived images and the chart are provided under CC BY 4.0 with this attribution.
 
 ## Real-car references and rights
 

@@ -1,15 +1,18 @@
 {
-  "schema": "rb19-public-geometry-evidence-v1",
-  "source": "Selected fields from recorded geometry reports; large geometry files are not distributed or freshly rehashed for this portfolio",
+  "schema": "rb19-public-geometry-evidence-v2",
+  "recordedAt": "2026-10-17T00:31:57.166413+07:00",
+  "source": "Selected current results from fresh local surface checks and reopened native triangle buffers; large geometry is not distributed here.",
   "surface": {
     "passed": true,
-    "surfaceSHA256": "9703d2685c1afa614aef2ea11e16479759f2f2f1b34e3ec5f664ed1918a23bec",
+    "surfaceSHA256": "f689f0f81d59c549de3600aac99aabac33b83b26ce73c4a1923ece0cd5addbef",
     "triangles": 2114416,
     "vertices": 1054066,
     "watertight": true,
     "consistentWinding": true,
     "selfIntersections": 0,
     "holes": 0,
+    "openFOAMCheckPassed": true,
+    "sourceReportSHA256": "389125caca10480dfeae64fe14f6011ba4dcce1ff390cf6e386b78d903011558",
     "patchTriangles": {
       "body": 1146133,
       "frontWing": 305413,
@@ -18,26 +21,42 @@
       "wheelFR": 101075,
       "wheelRL": 106174,
       "wheelRR": 108272
-    },
-    "sourceReportSHA256": "4b56fdbb19e4a599ecd496ba9897e1ffab0f71520935d20e92dc3821ffbf00f6"
+    }
   },
   "native": {
     "reopenPassed": true,
-    "recordedNativeSHA256": "b3c34f90f2a7aac2d95b6a4119846bfbf2d5f427c930d73013b3e4e15f4af03c",
+    "recordedNativeSHA256": "78f74ab77b645bcbd8ae2d88d197ca2037583d62203c459197e2e1dc43b30f31",
     "reopenedBlenderVersion": "4.0.2",
-    "sourceReportSHA256": "300a9c8eb2975d9ea3526c87e906e9f6cec6bd743ab4a594a287008808b98c86"
+    "sourceReportSHA256": "970f36dfc85f793255c02f3bca3f8084cd29fc82d1b3be8e5770032678a8ce0d"
+  },
+  "rearWing": {
+    "centralAngleBefore_deg": 75.78171502754348,
+    "centralAngleAfter_deg": 45.000681056822735,
+    "outerTarget_deg": 42,
+    "anglesAreReconstructionAssumptions": true,
+    "DRS": "modeled closed"
   },
   "clearanceProbes": {
     "passed": true,
-    "lines": 1107,
-    "points": 45387,
-    "passedLines": 1107,
-    "method": "Meshlib batch closest-surface signed distances, positive outside solid; all interior samples including endpoints checked against final union.",
+    "sections": 12,
+    "points": 372,
+    "solidHits": 0,
+    "minimumSampledGap_m": 0.006364001889057102,
+    "maximumSampledGap_m": 0.015598410545168367,
+    "method": "Independent planar sections of the revised repaired rear-wing STL and 31 interior samples per shortest section-gap line.",
     "limitations": [
-      "Surface must independently pass closed/non-self-intersection checks before interpreting signs.",
-      "Finite probes do not establish full-span fluid mesh quality, yPlus or converged flow."
-    ],
-    "sourceReportSHA256": "1fbf90c60bad9dee66361ad9b75b9a8c03f7794ecf0e70ab503d5f8185638395"
+      "Finite samples are not a global full-span clearance proof.",
+      "New volume-mesh resolution and aerodynamic convergence are still required."
+    ]
+  },
+  "numericalRegularizationMaximumMotion_m": 1.0004751039628373e-05,
+  "otherPatchMaximumVertexMotion_m": {
+    "body": 1.0004751039628373e-05,
+    "frontWing": 0.0,
+    "wheelFL": 0.0,
+    "wheelFR": 0.0,
+    "wheelRL": 0.0,
+    "wheelRR": 0.0
   },
   "fluidMeshAccepted": false,
   "solverStarted": false,

@@ -20,7 +20,7 @@ The final surface record reports 7 patches: `body`, `frontWing`, `rearWing`, and
 
 ## Physical reconstruction choices
 
-The rear-wing study replaces thin central artist skins with closed physical sections and a smooth spanwise transition. The section chart documents the change. Nominal section thicknesses and internal details are reconstruction assumptions; perspective photographs cannot establish exact aerodynamic profiles.
+The rear-wing study first replaced thin central artist skins with closed physical sections. The 17 October correction then reduced the central flap chord angle from about 75.8 to 45 degrees and reshaped the mainplane, rolled ends and support together. The current section chart documents that incidence correction. The old volume checkpoint and refinement boxes cannot be reused for this shape. Nominal section thicknesses and internal details are reconstruction assumptions; perspective photographs cannot establish exact aerodynamic profiles.
 
 The diffuser work addresses the floor transition, roof, outer walls, and central spine. References span several 2023 events. They support visible shape features but do not establish a single exact race trim or hidden internal geometry.
 

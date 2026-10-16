@@ -18,24 +18,22 @@ This project adapts an attributed RB19 artist model into a detailed Blender stud
 
 ## Current evidence
 
-Snapshot: **16 October 2026**. See [status and acceptance criteria](docs/status.md) for the scope of each claim.
+Snapshot: **17 October 2026**. The rear wing has been corrected after review of its over-steep flap.
 
 | Milestone | Confirmed status |
 |---|---|
-| Detailed geometry and existing studio renders | Available |
-| Accepted repaired surface | Recorded closed-surface audit passed; 2,114,416 triangles across 7 patches |
-| Native Blender file | Saved and reopened successfully in the recorded geometry validation |
-| Last verified saved mesh checkpoint | **3,154,323 cells** |
-| Later refinement progress | **4,892,045-cell peak**, then **3,382,439 cells after subsetting**, observed only in RAM; neither state was saved |
-| Post-stop checkpoint audit | Passed at 23:35 Bangkok time; the saved 3,154,323-cell checkpoint still matches its immutable snapshot |
-| Latest production attempt | Stopped after 99 minutes 49 seconds by the host RAM reserve guard; no OOM event |
-| Accepted final volume mesh | Pending |
-| Flow solver | **Not started** |
-| Validated drag/downforce results | **Not available** |
+| Upper flap at central span | Approximately **75.8° → 45°** from horizontal; outer target about 42° |
+| Mainplane, rolled tips and support | Reshaped with the flap; upper trailing edge kept near a common fore-aft station |
+| Revised surface | Closed, consistent winding, zero self-intersections in independent and OpenFOAM checks; **2,114,416 triangles**, 7 patches |
+| Revised slot inspection | **12 sections / 372 interior probes**, no solid hits; sampled clearance **6.364–15.598 mm** |
+| Single native project | Saved, reopened, and its embedded CFD triangle buffers checked |
+| Previous volume-mesh checkpoint | **3,154,323 cells for the old wing only**; cannot be reused for this geometry |
+| New volume mesh and flow solver | **Not started for the revised shape** |
+| Validated aerodynamic results | **Not available** |
 
-These images show the modified model. They are not pressure contours, wind-tunnel measurements, or evidence of aerodynamic performance.
+The angles are reconstruction choices informed by photographs, not measured Red Bull CAD. DRS remains in the modeled closed configuration. The images show geometry, not pressure fields or wind-tunnel measurements.
 
-The next production launch requires at least 6.5 GiB of fresh Windows memory headroom. The finite RAM/swap limits and live 1 GiB reserve guard remain in place; transient cleanup gains do not establish that the full mesh will fit.
+The previous mesher was stopped intentionally when Phoom requested the wing correction. The next CFD step requires a **new geometry contract, new slot-refinement boxes, and a fresh volume mesh**. Details are in [status and acceptance criteria](docs/status.md).
 
 ## Geometry details
 
@@ -45,7 +43,11 @@ The next production launch requires at least 6.5 GiB of fresh Windows memory hea
 
 ![Original and reconstructed rear-wing cross sections](assets/rear-wing-section-comparison.png)
 
-The red profiles show the reconstructed sections; the grey profiles show the earlier artist surface. Thickness and unseen sections are modeling assumptions, not measurements of Red Bull team CAD. This study combines visible 2023 features and does not claim one exact race specification.
+The teal profiles show the corrected CFD sections; grey shows the preceding over-steep wing. The mainplane and flap were reshaped together while retaining a narrow open slot. Thickness, chord angles and unseen details are modeling assumptions. This study does not claim one exact race specification.
+
+![Corrected rear-wing assembly](assets/rear-wing-front.png)
+
+[Side view](assets/rear-wing-side.png) · [Rear view](assets/rear.png) · [Full-car side view](assets/side.png)
 
 ## Planned flow setup
 

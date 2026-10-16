@@ -6,7 +6,7 @@ These JSON files are selected public fields from local project reports. Personal
 |---|---|
 | [model-provenance.json](model-provenance.json) | Original creator, source, CC BY 4.0, and recorded acquisition identity |
 | [geometry-summary.json](geometry-summary.json) | Recorded surface checks, native-file reopening, and finite geometric clearance probes |
-| [status.json](status.json) | Last verified saved checkpoint versus later in-memory progress; solver not started |
+| [status.json](status.json) | Current rear-wing delivery, obsolete old-geometry checkpoint, and new volume-mesh requirement; solver not started |
 | [workflow-tests.json](workflow-tests.json) | Compact summaries of existing lightweight local workflow tests |
 | [public-example-tests.json](public-example-tests.json) | Tests rerun against the code included in this public snapshot |
 | [asset-manifest.json](asset-manifest.json) | Original/public image hashes, metadata-only sanitation, byte identity of pixel-bearing PNG chunks, and attribution |
