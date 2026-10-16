@@ -1,0 +1,20 @@
+{
+  "schema": "rb19-public-model-provenance-v1",
+  "title": "Oracle Red Bull F1 Car RB19 2023",
+  "creator": "Redgrund",
+  "creatorURL": "https://sketchfab.com/redgrund",
+  "originalURL": "https://sketchfab.com/3d-models/oracle-red-bull-f1-car-rb19-2023-e4afe46f3aab4b23a418da06fc163821",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "creatorPublicAPICheckedOn": "2026-10-16",
+  "creatorPublicAPIConfirmsLicense": true,
+  "creatorPublicAPIConfirmsDownloadable": true,
+  "redistributionRepository": "https://github.com/MR-05-001/RB19",
+  "redistributionCommit": "468c8db1ffc191554b3b1ab5925fe2bf358d8fa0",
+  "recordedSourceBytes": 19578544,
+  "recordedSourceSHA256": "13b4da1abf02feb72f7a5a91a30d2e6941923914eae64af81456ee359df18693",
+  "originalAssetIncluded": false,
+  "modifications": "Scale and component organization; rear-wing section reconstruction; floor/diffuser reconstruction; repaired CFD surface; project studio renders",
+  "projectCredit": "Phoom & OpenAI Codex",
+  "scope": "Artist model, not official team CAD or validated real-car aerodynamics"
+}

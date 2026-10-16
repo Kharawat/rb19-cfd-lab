@@ -1,0 +1,45 @@
+{
+  "schema": "rb19-public-geometry-evidence-v1",
+  "source": "Selected fields from recorded geometry reports; large geometry files are not distributed or freshly rehashed for this portfolio",
+  "surface": {
+    "passed": true,
+    "surfaceSHA256": "9703d2685c1afa614aef2ea11e16479759f2f2f1b34e3ec5f664ed1918a23bec",
+    "triangles": 2114416,
+    "vertices": 1054066,
+    "watertight": true,
+    "consistentWinding": true,
+    "selfIntersections": 0,
+    "holes": 0,
+    "patchTriangles": {
+      "body": 1146133,
+      "frontWing": 305413,
+      "rearWing": 244130,
+      "wheelFL": 103219,
+      "wheelFR": 101075,
+      "wheelRL": 106174,
+      "wheelRR": 108272
+    },
+    "sourceReportSHA256": "4b56fdbb19e4a599ecd496ba9897e1ffab0f71520935d20e92dc3821ffbf00f6"
+  },
+  "native": {
+    "reopenPassed": true,
+    "recordedNativeSHA256": "b3c34f90f2a7aac2d95b6a4119846bfbf2d5f427c930d73013b3e4e15f4af03c",
+    "reopenedBlenderVersion": "4.0.2",
+    "sourceReportSHA256": "300a9c8eb2975d9ea3526c87e906e9f6cec6bd743ab4a594a287008808b98c86"
+  },
+  "clearanceProbes": {
+    "passed": true,
+    "lines": 1107,
+    "points": 45387,
+    "passedLines": 1107,
+    "method": "Meshlib batch closest-surface signed distances, positive outside solid; all interior samples including endpoints checked against final union.",
+    "limitations": [
+      "Surface must independently pass closed/non-self-intersection checks before interpreting signs.",
+      "Finite probes do not establish full-span fluid mesh quality, yPlus or converged flow."
+    ],
+    "sourceReportSHA256": "1fbf90c60bad9dee66361ad9b75b9a8c03f7794ecf0e70ab503d5f8185638395"
+  },
+  "fluidMeshAccepted": false,
+  "solverStarted": false,
+  "aerodynamicPerformanceValidated": false
+}

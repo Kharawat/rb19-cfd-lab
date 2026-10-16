@@ -1,0 +1,34 @@
+{
+  "schema": "rb19-public-workflow-test-summary-v1",
+  "snapshotDate": "2026-10-16",
+  "scope": "Summaries of local lightweight test reports, not CFD results",
+  "resourceProfile": {
+    "passed": true,
+    "selectionFixtures": 132,
+    "allowlistRejections": 28,
+    "freshPreflightFixtures": 20,
+    "productionLaunched": false
+  },
+  "cellBudgetTransaction": {
+    "passed": true,
+    "fixtureCount": 9,
+    "scenarios": [
+      "success",
+      "after_staging",
+      "after_params.json",
+      "after_system/snappy-snap",
+      "changed_checkpoint",
+      "stale_stage",
+      "oom_evidence",
+      "numeric_time",
+      "protected_box_changed"
+    ],
+    "productionPreparationExecuted": false
+  },
+  "localCheckpointParser": {
+    "passed": true,
+    "count": 13,
+    "productionMeshOpened": false,
+    "publicSubset": "12 synthetic fixtures are included; the local native-binary fixture log is not redistributed"
+  }
+}

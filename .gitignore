@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.blend
+*.blend[0-9]*
+*.stl
+*.glb
+*.npz
+*.log
+processor[0-9]*/
+.DS_Store
+Thumbs.db

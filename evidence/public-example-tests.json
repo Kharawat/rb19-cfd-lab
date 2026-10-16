@@ -1,0 +1,12 @@
+{
+  "schema": "rb19-public-example-tests-v1",
+  "passed": true,
+  "testsRun": 12,
+  "failures": 0,
+  "errors": 0,
+  "scope": "Synthetic MPI log-order fixtures only; no Blender, mesher, solver, or production checkpoint opened",
+  "pythonRequirement": "3.10+",
+  "command": "python -m unittest discover -s tests -v",
+  "sourceSHA256": "c0500c4009f590d73c8cbe0a1de1ce36c389eb3bf21a8eee15522fa0ed55ae9e",
+  "testSHA256": "bf2be8026e26534ef87d7dfbff044caa37ef9ae63c7276f6d6d7c5790cd06696"
+}

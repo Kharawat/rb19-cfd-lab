@@ -1,0 +1,27 @@
+{
+  "schema": "rb19-public-status-v1",
+  "recordedAt": "2026-10-16T15:23:48.379823+07:00",
+  "project": "RB19 CFD Lab",
+  "geometryPreviewAvailable": true,
+  "postStopAuditCompleted": true,
+  "lastVerifiedSavedCheckpointCells": 3154323,
+  "rankCells": [
+    1431407,
+    1722916
+  ],
+  "liveCheckpointExactlyMatchesSnapshotManifest": true,
+  "snapshotManifestSHA256": "26c44b85dfaf21ded288b793d247278edbd650a34734357677a37c8d07243314",
+  "canonicalZeroFieldsUnchanged": true,
+  "inMemoryCompletedCells": 4498036,
+  "largerMeshSaved": false,
+  "finalMeshAccepted": false,
+  "castellationCompleted": false,
+  "solverStarted": false,
+  "aerodynamicResultsAvailable": false,
+  "stopReason": "Windows host available memory below 1 GiB for 15s",
+  "auditChangedMeshInputsOrMarkers": false,
+  "fullGeometryIdentityScope": "Large STL/eMesh and the control-physics digest were not freshly rehashed by this audit. Their values come from the frozen manifest and the identity gate that passed before this stopped run.",
+  "recordedGeometryIdentityGatePassedBeforeRun": true,
+  "sourceReportSHA256": "b41b07ddcab483253205b03939e14bf6dbb2bbe8efad8db3ba2a64b91dc75579",
+  "statusScope": "Snapshot after a completed post-stop audit; future job progress requires a new accepted evidence update"
+}

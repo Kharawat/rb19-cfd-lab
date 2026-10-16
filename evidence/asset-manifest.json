@@ -1,0 +1,69 @@
+{
+  "schema": "rb19-public-image-manifest-v2",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "sanitation": "Only textual PNG chunks containing private machine paths were removed from public copies. All non-text chunks, including IHDR and every IDAT chunk, are byte-identical to the originals.",
+  "images": [
+    {
+      "file": "assets/hero.png",
+      "bytes": 2565312,
+      "originalBytes": 2565403,
+      "originalSHA256": "e17ce382de31584ef508f336cb0dd79545ef2dd92ff4a7da5e5d16ebc24fab24",
+      "publicSHA256": "1bdbc890b8f6bc6c19329e4ef0d52fd27c2c1e396da1018d0d2473de80dc8e05",
+      "metadataOnlySanitized": true,
+      "removedTextFieldNames": [
+        "File"
+      ],
+      "pixelBearingChunksByteIdentical": true,
+      "allNonTextPNGChunksByteIdentical": true,
+      "sourceImageUnchanged": true,
+      "license": "CC BY 4.0",
+      "credit": "Redgrund: original artist model. Phoom & OpenAI Codex: geometry modifications, project renders and section comparison."
+    },
+    {
+      "file": "assets/diffuser.png",
+      "bytes": 2240274,
+      "originalBytes": 2240365,
+      "originalSHA256": "a3503e72a44ae48cf9389dfd56bd0a396e04854086ccab5d10e026689bbdf1fd",
+      "publicSHA256": "89dae6b997850fc0cdfea64385298036f82ac33c85aa847d8d5a7c758edabfd1",
+      "metadataOnlySanitized": true,
+      "removedTextFieldNames": [
+        "File"
+      ],
+      "pixelBearingChunksByteIdentical": true,
+      "allNonTextPNGChunksByteIdentical": true,
+      "sourceImageUnchanged": true,
+      "license": "CC BY 4.0",
+      "credit": "Redgrund: original artist model. Phoom & OpenAI Codex: geometry modifications, project renders and section comparison."
+    },
+    {
+      "file": "assets/underfloor.png",
+      "bytes": 2317287,
+      "originalBytes": 2317378,
+      "originalSHA256": "d6b7b7b379a7e4f5fb0731db9620f689721f2400db61aa2953f97d503e843e5b",
+      "publicSHA256": "87e5f14c9b56630f9e09dd4e6780d3389bd7b01bdc285a7a4093d25c6b1542d0",
+      "metadataOnlySanitized": true,
+      "removedTextFieldNames": [
+        "File"
+      ],
+      "pixelBearingChunksByteIdentical": true,
+      "allNonTextPNGChunksByteIdentical": true,
+      "sourceImageUnchanged": true,
+      "license": "CC BY 4.0",
+      "credit": "Redgrund: original artist model. Phoom & OpenAI Codex: geometry modifications, project renders and section comparison."
+    },
+    {
+      "file": "assets/rear-wing-section-comparison.png",
+      "bytes": 137340,
+      "originalBytes": 137340,
+      "originalSHA256": "9aa3eb7ac0fac35efa45bc3f6c683aada41829ff96b50c8f2ae3646bddbdac0f",
+      "publicSHA256": "9aa3eb7ac0fac35efa45bc3f6c683aada41829ff96b50c8f2ae3646bddbdac0f",
+      "metadataOnlySanitized": false,
+      "removedTextFieldNames": [],
+      "pixelBearingChunksByteIdentical": true,
+      "allNonTextPNGChunksByteIdentical": true,
+      "sourceImageUnchanged": true,
+      "license": "CC BY 4.0",
+      "credit": "Redgrund: original artist model. Phoom & OpenAI Codex: geometry modifications, project renders and section comparison."
+    }
+  ]
+}
