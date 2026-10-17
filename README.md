@@ -1,10 +1,38 @@
 # RB19 CFD Lab
 
-**Photo-informed RB19 geometry and working Blender DRS, co-designed and developed by Phoom & OpenAI Codex.** The OpenFOAM virtual wind tunnel remains in preparation.
+**Photo-informed RB19 geometry, continuous underfloor/diffuser and working Blender DRS, co-designed and developed by Phoom & OpenAI Codex.** The OpenFOAM virtual wind tunnel remains in preparation.
 
 ![Current RB19 model](assets/hero.png)
 
 *Modified from [Redgrund's “Oracle Red Bull F1 Car RB19 2023”](https://sketchfab.com/3d-models/oracle-red-bull-f1-car-rb19-2023-e4afe46f3aab4b23a418da06fc163821), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Model-derived images and animation retain that license. [Attribution and changes](ATTRIBUTION.md).*
+
+## Latest underbody reconstruction
+
+![Continuous underfloor and diffuser, rendered from the actual native model](assets/underfloor-rear.png)
+
+The floor now runs continuously from the inlet through a throat into a stepped,
+curved diffuser. Six internal swept inlet vanes and two floor-edge blades were
+built, the sidepod undercut and lower waist were deepened, and the diffuser wall
+was narrowed around the retained brake fins. Original UVs, BYBIT livery and the
+DRS assembly are retained.
+
+The nine new closed components pass independent topology and self-intersection
+checks. Their **182,488-triangle underbody-only union** passes OpenFOAM
+`surfaceCheck -checkSelfIntersection`. Six underfloor paths and two sidepod bypass
+paths are geometrically open in the saved native file; the smallest sampled
+distance to a solid is **25.56 mm**. These are geometric probes, not simulated
+streamlines or proof of attached flow.
+
+| Diffuser mouth | Sidepod undercut |
+|---|---|
+| ![Diffuser](assets/diffuser-mouth.png) | ![Sidepod](assets/sidepod.png) |
+
+The reconstruction combines Monaco underside, Spain diffuser and Hungary
+sidepod photographs. It is not one verified race specification or team CAD.
+Dimensions, an 8 mm modeled floor thickness and ride-height setup remain
+assumptions. [References and decisions](docs/underbody-references.md) ·
+[Underbody evidence](evidence/underbody-summary.json) ·
+[Assumed section stations](src/underbody_stations.json).
 
 ## Working DRS
 
@@ -12,11 +40,11 @@
 
 This animation contains actual frames rendered from the saved Blender project. Only the upper flap, its markings and moving actuator lug rotate about the fixed hinge; the mainplane, endplates, swan-neck and beam wing stay fixed. A telescopic link follows the moving lug. BYBIT remains on the forward/top wing surfaces with a gold I; ORACLE is on the rear flap.
 
-The single local `RB19.blend` contains `CTRL_DRS` with a 0–1 custom property. Frame 1/120 is closed and frame 60 is open; the timeline plays a four-second demonstration. No addon is required.
+The wing-only animation and detail images were retained from the preceding delivery; exact wing geometry is unchanged. The single local `RB19.blend` contains `CTRL_DRS` with a 0–1 custom property. Frame 1/120 is closed and frame 60 is open; the timeline plays a four-second demonstration. No addon is required.
 
 ## Current evidence
 
-Snapshot: **18 October 2026**. Front and rear wings were reconstructed following photo review. Exact race-car dimensions and aerodynamic performance are not established.
+Snapshot: **18 October 2026**. The new underbody and sidepod geometry is delivered. The previously reconstructed front/rear wings are unchanged; DRS was checked again at 16 positions after reopening the current native file. Exact race-car dimensions and aerodynamic performance are not established.
 
 | Check | Observed result |
 |---|---|
@@ -27,7 +55,7 @@ Snapshot: **18 October 2026**. Front and rear wings were reconstructed following
 | Rear slot | 39 sampled sections per state: closed **17.08–22.04 mm**, open **66.38–81.99 mm** |
 | Front slots | 54 sampled sections; minimum sampled gap **7.18 mm** |
 | Whole-car CFD surface | **Requires a fresh state-specific export, transition repair and union** |
-| Volume mesh and solver | No accepted mesh or aerodynamic solution for these wings |
+| Volume mesh and solver | No accepted mesh or aerodynamic solution for the current car |
 
 The sampled checks are not a continuous clearance proof or FIA compliance certification. The previous repaired CFD surface and **3,154,323-cell checkpoint belong to older geometry**. They cannot be reused as current acceptance evidence. [Status and acceptance criteria](docs/status.md) · [Compact evidence](evidence/README.md).
 

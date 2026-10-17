@@ -45,3 +45,15 @@ The current images and animation were rendered from the inspected native model o
 The real RB19 is a Red Bull Racing car. This project does not claim ownership of its design, team CAD, livery, trademarks, or sponsor marks. Those rights remain with their respective owners. This independent educational portfolio does not imply affiliation or endorsement.
 
 Third-party reference photographs were consulted locally and are not included. [Engineering notes](docs/engineering.md#reference-links) link to the publishers and credit the photographers. Unseen geometry and section thicknesses are assumptions; the model is not an exact or aerodynamically validated reconstruction of the real car.
+
+
+### Underbody reconstruction, 18 October 2026
+
+Phoom Kharawat and OpenAI Codex co-designed and developed a continuous
+photo-informed floor/diffuser, six internal inlet fences, two floor-edge blades,
+sidepod undercut/waist refinements, bounded lower-skin joins, native geometric
+passage checks and an independently checked underbody-only STL union. Original
+UVs and wing/DRS geometry are retained. Monaco, Spain and Hungary photographs
+inform an explicitly mixed 2023 reconstruction with assumed dimensions. The
+base model remains Redgrund's CC BY 4.0 work; Red Bull Racing designed the real
+car. This attribution does not claim original authorship of either.

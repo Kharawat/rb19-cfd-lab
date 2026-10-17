@@ -28,3 +28,15 @@ This credit describes the work on this study. It is not a claim of authorship of
 - **Reference photographers and publishers:** visual references for visible features. Their photographs are linked in the engineering notes but are not redistributed in this repository.
 
 The attribution record and source links are in [ATTRIBUTION.md](ATTRIBUTION.md).
+
+
+### Underbody reconstruction, 18 October 2026
+
+Phoom Kharawat and OpenAI Codex co-designed and developed a continuous
+photo-informed floor/diffuser, six internal inlet fences, two floor-edge blades,
+sidepod undercut/waist refinements, bounded lower-skin joins, native geometric
+passage checks and an independently checked underbody-only STL union. Original
+UVs and wing/DRS geometry are retained. Monaco, Spain and Hungary photographs
+inform an explicitly mixed 2023 reconstruction with assumed dimensions. The
+base model remains Redgrund's CC BY 4.0 work; Red Bull Racing designed the real
+car. This attribution does not claim original authorship of either.

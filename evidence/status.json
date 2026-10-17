@@ -1,9 +1,9 @@
 {
   "schema": "rb19-public-status-v3",
-  "recordedAt": "2026-10-18T00:16:05.051244+07:00",
+  "recordedAt": "2026-10-18T01:07:24.893289+07:00",
   "project": "RB19 CFD Lab",
-  "geometryRevision": "photo-wings-working-DRS-20261018",
-  "nativeSHA256": "b2912910ce2388c8fd392f0310625bd43f0c9db5407d609b897fcfbb40006f30",
+  "geometryRevision": "continuous-underbody-sidepod-diffuser-20261018",
+  "nativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
   "wingReconstructionDelivered": true,
   "nativeReopenPassed": true,
   "newWingComponentChecksPassed": true,
@@ -14,5 +14,8 @@
   "finalMeshAccepted": false,
   "solverStarted": false,
   "aerodynamicResultsAvailable": false,
-  "nextStep": "Export the selected DRS state, repair/union retained transitions, validate the whole-car surface, then build a fresh volume mesh."
+  "nextStep": "Export the exact selected DRS state and repair/union the whole car; accept a fresh surface and volume mesh before running the solver.",
+  "underbodyDelivered": true,
+  "newUnderbodyComponentChecksPassed": true,
+  "underbodyOnlySurfaceCheckPassed": true
 }

@@ -1,67 +1,73 @@
 {
-  "schema": "rb19-native-drs-assets-v1",
-  "recordedAt": "2026-10-18T00:16:05.051244+07:00",
-  "nativeSHA256": "b2912910ce2388c8fd392f0310625bd43f0c9db5407d609b897fcfbb40006f30",
+  "schema": "rb19-native-underbody-assets-v1",
+  "recordedAt": "2026-10-18T01:07:24.893289+07:00",
+  "nativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
   "images": [
     {
       "file": "assets/hero.png",
-      "originalSHA256": "ddfe4a750d44d04340e19c4050f86c49528c7b2bd10b8a053226083e5f358fb7",
-      "publicSHA256": "1ae1610c54aabdbbc8c39118f2ed34b3edfbdb74481db03e0053f03c8835aa6b",
-      "bytes": 2553882,
+      "originalSHA256": "e1e79affd2fe6036ee4581f8a3e4f5fbfb78bf9d7a48a516ac40308e6888a622",
+      "publicSHA256": "2c45eac21f694eead0e8ac6510180d684b969df518626ad5e2ed6d7057f455b4",
+      "bytes": 2553352,
       "source": "Actual native Blender render",
+      "sourceNativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications and renders."
     },
     {
       "file": "assets/side.png",
-      "originalSHA256": "fcbf77f011f3a61d478108f040a8fd928d0f2fdcae4debd3848df25ee17ea4e8",
-      "publicSHA256": "a529247f69def7cfd70ee81be5f23bb5724ffa9cc01a2051664330190663bd5a",
-      "bytes": 1862832,
+      "originalSHA256": "8bc8dbd936c18ddd2573befe356495becad9d36ba080a58f6229693983af2b55",
+      "publicSHA256": "8a758e973d8659f8cbabf257ccaf7f34a13c78fbcd0a66d7e38ca344f3e0952a",
+      "bytes": 1862819,
       "source": "Actual native Blender render",
+      "sourceNativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications and renders."
     },
     {
       "file": "assets/rear.png",
-      "originalSHA256": "6129a3bb57fb1a7b5aa9355e780636cc01a3a9ba6366ea49ea0997886d842723",
-      "publicSHA256": "5b93ba36a150ba3d74e362aaf19079eed839da3e607fa49be6fc7630923c09c3",
-      "bytes": 2218353,
+      "originalSHA256": "f0895a56ab86a319a79675a83b5f2f10e05594e46328d8a9b5bb82e15bda5cbb",
+      "publicSHA256": "7e5c1764d61ea768511dc316bc47c1f6810ce10ea9d7d57af121dd5f768d30f9",
+      "bytes": 2228805,
       "source": "Actual native Blender render",
+      "sourceNativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications and renders."
     },
     {
       "file": "assets/front.png",
-      "originalSHA256": "f93c7ad551f1b9737c28acc21017f86bc17330e2e26d4bdb84f21c1e96b8c33c",
-      "publicSHA256": "8685e661b33bc917f19263a1c85ef8707ef416f0e4c9b0b37633f3a1de9c73f3",
-      "bytes": 2243991,
+      "originalSHA256": "7a3a88472454c1bc4bc9091cdce7eebf294cbfe7d68b866fd6f2ad63b2f3d669",
+      "publicSHA256": "56d5020274295dbedd03df1c391db53512ff23fcb5af520b145af97be4b36f0b",
+      "bytes": 2242465,
       "source": "Actual native Blender render",
+      "sourceNativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications and renders."
     },
     {
       "file": "assets/diffuser.png",
-      "originalSHA256": "434682d63b2903c411bff15efb2d8292bd82bf2c4df23573815333c70ba8bcab",
-      "publicSHA256": "9301cb80ce9f52973f2677f4d69819a5d268e4200ddfb89a02e021db1c5724bd",
-      "bytes": 2184826,
+      "originalSHA256": "77d355c7c5ddb32730eefa5bd8dec9ee358a68d8163285f0e98f7a5f4351ee80",
+      "publicSHA256": "53cb504afd3081065f6928398b00187cc42036d7fc89cf6ecfc97c579ef2b1b9",
+      "bytes": 2156725,
       "source": "Actual native Blender render",
+      "sourceNativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications and renders."
     },
     {
       "file": "assets/underfloor.png",
-      "originalSHA256": "0ee3cdab8525979fa4b79a2c3d74618b94b430b0163dc1ab47b39e2d0d18a62f",
-      "publicSHA256": "468947e34246299ab48101c324221d82b5f47cf5245261a73717a6a531d57190",
-      "bytes": 2312906,
+      "originalSHA256": "7a0ea37f94231676a2bceb82bcb5c03c32c7625f15dbe07b05cdab6b6b7e6b68",
+      "publicSHA256": "a0d5d2cf276bc8b321dc889b2c1dfeb75629ea3c259a988d47c1008f11a45ac9",
+      "bytes": 2333637,
       "source": "Actual native Blender render",
+      "sourceNativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications and renders."
     },
     {
       "file": "assets/rear-closed-photo.png",
@@ -71,7 +77,9 @@
       "source": "Actual native Blender render",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders.",
+      "sourceNativeSHA256": "b2912910ce2388c8fd392f0310625bd43f0c9db5407d609b897fcfbb40006f30",
+      "retainedUnchangedWingGeometry": true
     },
     {
       "file": "assets/rear-open-photo.png",
@@ -81,7 +89,9 @@
       "source": "Actual native Blender render",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders.",
+      "sourceNativeSHA256": "b2912910ce2388c8fd392f0310625bd43f0c9db5407d609b897fcfbb40006f30",
+      "retainedUnchangedWingGeometry": true
     },
     {
       "file": "assets/rear-closed-front.png",
@@ -91,7 +101,9 @@
       "source": "Actual native Blender render",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders.",
+      "sourceNativeSHA256": "b2912910ce2388c8fd392f0310625bd43f0c9db5407d609b897fcfbb40006f30",
+      "retainedUnchangedWingGeometry": true
     },
     {
       "file": "assets/rear-open-rear.png",
@@ -101,7 +113,9 @@
       "source": "Actual native Blender render",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders.",
+      "sourceNativeSHA256": "b2912910ce2388c8fd392f0310625bd43f0c9db5407d609b897fcfbb40006f30",
+      "retainedUnchangedWingGeometry": true
     },
     {
       "file": "assets/front-refined.png",
@@ -111,7 +125,9 @@
       "source": "Actual native Blender render",
       "pixelBearingPNGChunksByteIdentical": true,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders.",
+      "sourceNativeSHA256": "b2912910ce2388c8fd392f0310625bd43f0c9db5407d609b897fcfbb40006f30",
+      "retainedUnchangedWingGeometry": true
     },
     {
       "file": "assets/DRS-motion.gif",
@@ -121,7 +137,53 @@
       "source": "Actual native Blender render",
       "pixelBearingPNGChunksByteIdentical": false,
       "license": "CC BY 4.0",
-      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders."
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications, rig and renders.",
+      "sourceNativeSHA256": "b2912910ce2388c8fd392f0310625bd43f0c9db5407d609b897fcfbb40006f30",
+      "retainedUnchangedWingGeometry": true
+    },
+    {
+      "file": "assets/sidepod.png",
+      "originalSHA256": "4bff2288847c51a8f7c99181469762af85152dc8a08a39b2f9398cdd717ce3dd",
+      "publicSHA256": "020400d15455dccd4eb0f3eb80b2dd209649e3373e465d80343dc9ad3678db9d",
+      "bytes": 2197503,
+      "source": "Actual native Blender render",
+      "sourceNativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
+      "pixelBearingPNGChunksByteIdentical": true,
+      "license": "CC BY 4.0",
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications and renders."
+    },
+    {
+      "file": "assets/diffuser-mouth.png",
+      "originalSHA256": "88df12c86b39fc4c95b2bb25c58a7d3bfaf09297f3cc518c7c9c75efb56c3f7a",
+      "publicSHA256": "cf6fde348a03b2f8651a54816dd3b9f78d7eb6b3be83788d97b0a1228efe7a09",
+      "bytes": 2162335,
+      "source": "Actual native Blender render",
+      "sourceNativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
+      "pixelBearingPNGChunksByteIdentical": true,
+      "license": "CC BY 4.0",
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications and renders."
+    },
+    {
+      "file": "assets/underfloor-rear.png",
+      "originalSHA256": "40e0af35a90a8a6d0adbb780eed6bf20199b6049fedac27dd9e4901842799135",
+      "publicSHA256": "f263afcf4de23642080b272c6edbd11ce1098b9d068bc5a82676b9c3231263b6",
+      "bytes": 2378255,
+      "source": "Actual native Blender render",
+      "sourceNativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
+      "pixelBearingPNGChunksByteIdentical": true,
+      "license": "CC BY 4.0",
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications and renders."
+    },
+    {
+      "file": "assets/underfloor-plan.png",
+      "originalSHA256": "6eb2d101b67a98aad41bb01aff613b5719878a97ac71078b3ea3388bcff0a6f1",
+      "publicSHA256": "cdc5927b02b8f0f43cb6e5b06d75997d9180a97bac6d6c719f686d05e674a40b",
+      "bytes": 2056580,
+      "source": "Actual native Blender render",
+      "sourceNativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
+      "pixelBearingPNGChunksByteIdentical": true,
+      "license": "CC BY 4.0",
+      "credit": "Redgrund: original model. Phoom & OpenAI Codex: project modifications and renders."
     }
   ]
 }

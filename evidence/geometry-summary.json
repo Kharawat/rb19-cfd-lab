@@ -332,5 +332,6 @@
     "Retained endplate and front tip/nose transition surfaces still need a new CFD union/repair after this reconstruction.",
     "No new whole-car surface acceptance, volume mesh or CFD result is claimed."
   ],
-  "sourceValidationSHA256": "df2c90699c235fd0b89559c97fc4d648570795ebee4af5d431e4bfa6945b6b89"
+  "sourceValidationSHA256": "df2c90699c235fd0b89559c97fc4d648570795ebee4af5d431e4bfa6945b6b89",
+  "snapshotScope": "Prior wing reconstruction retained unchanged; see underbody-summary.json for the current whole native-file identity."
 }

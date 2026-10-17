@@ -1,0 +1,267 @@
+{
+  "schema": "rb19-underbody-evidence-v1",
+  "recordedAt": "2026-10-18T01:07:24.893289+07:00",
+  "nativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
+  "referenceSpec": "Mixed2023: Monaco underside / Spain diffuser / Hungary sidepod",
+  "newClosedComponents": [
+    {
+      "name": "UF_Continuous_venturi_floor_and_diffuser",
+      "vertices": 82478,
+      "triangles": 164952,
+      "finiteVertices": true,
+      "nonTwoSidedGeometricEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "zeroAreaFaces": 0,
+      "minimumArea_m2": 2.9999749064923975e-06,
+      "signedVolume_m3": 0.04103108332588248,
+      "crossingPairs": 0,
+      "touchingOrCrossingPairs": 0,
+      "holeLoops": 0,
+      "trimeshWatertight": true,
+      "trimeshWindingConsistent": true,
+      "passed": true
+    },
+    {
+      "name": "UF_Inlet_fence_1_L",
+      "vertices": 1728,
+      "triangles": 3452,
+      "finiteVertices": true,
+      "nonTwoSidedGeometricEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "zeroAreaFaces": 0,
+      "minimumArea_m2": 4.687132459935128e-08,
+      "signedVolume_m3": 0.000577356055910126,
+      "crossingPairs": 0,
+      "touchingOrCrossingPairs": 0,
+      "holeLoops": 0,
+      "trimeshWatertight": true,
+      "trimeshWindingConsistent": true,
+      "passed": true
+    },
+    {
+      "name": "UF_Inlet_fence_2_L",
+      "vertices": 1728,
+      "triangles": 3452,
+      "finiteVertices": true,
+      "nonTwoSidedGeometricEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "zeroAreaFaces": 0,
+      "minimumArea_m2": 4.687644938883295e-08,
+      "signedVolume_m3": 0.0005396426094126319,
+      "crossingPairs": 0,
+      "touchingOrCrossingPairs": 0,
+      "holeLoops": 0,
+      "trimeshWatertight": true,
+      "trimeshWindingConsistent": true,
+      "passed": true
+    },
+    {
+      "name": "UF_Inlet_fence_3_L",
+      "vertices": 1728,
+      "triangles": 3452,
+      "finiteVertices": true,
+      "nonTwoSidedGeometricEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "zeroAreaFaces": 0,
+      "minimumArea_m2": 4.688051147283545e-08,
+      "signedVolume_m3": 0.0004005443132407407,
+      "crossingPairs": 0,
+      "touchingOrCrossingPairs": 0,
+      "holeLoops": 0,
+      "trimeshWatertight": true,
+      "trimeshWindingConsistent": true,
+      "passed": true
+    },
+    {
+      "name": "UF_Floor_edge_wing_L",
+      "vertices": 2064,
+      "triangles": 4124,
+      "finiteVertices": true,
+      "nonTwoSidedGeometricEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "zeroAreaFaces": 0,
+      "minimumArea_m2": 5.555951565483497e-07,
+      "signedVolume_m3": 0.00021653830145181022,
+      "crossingPairs": 0,
+      "touchingOrCrossingPairs": 0,
+      "holeLoops": 0,
+      "trimeshWatertight": true,
+      "trimeshWindingConsistent": true,
+      "passed": true
+    },
+    {
+      "name": "UF_Inlet_fence_1_R",
+      "vertices": 1728,
+      "triangles": 3452,
+      "finiteVertices": true,
+      "nonTwoSidedGeometricEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "zeroAreaFaces": 0,
+      "minimumArea_m2": 4.687132459935128e-08,
+      "signedVolume_m3": 0.000577356055910126,
+      "crossingPairs": 0,
+      "touchingOrCrossingPairs": 0,
+      "holeLoops": 0,
+      "trimeshWatertight": true,
+      "trimeshWindingConsistent": true,
+      "passed": true
+    },
+    {
+      "name": "UF_Inlet_fence_2_R",
+      "vertices": 1728,
+      "triangles": 3452,
+      "finiteVertices": true,
+      "nonTwoSidedGeometricEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "zeroAreaFaces": 0,
+      "minimumArea_m2": 4.687644938883295e-08,
+      "signedVolume_m3": 0.0005396426094126319,
+      "crossingPairs": 0,
+      "touchingOrCrossingPairs": 0,
+      "holeLoops": 0,
+      "trimeshWatertight": true,
+      "trimeshWindingConsistent": true,
+      "passed": true
+    },
+    {
+      "name": "UF_Inlet_fence_3_R",
+      "vertices": 1728,
+      "triangles": 3452,
+      "finiteVertices": true,
+      "nonTwoSidedGeometricEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "zeroAreaFaces": 0,
+      "minimumArea_m2": 4.688051147283545e-08,
+      "signedVolume_m3": 0.0004005443132407407,
+      "crossingPairs": 0,
+      "touchingOrCrossingPairs": 0,
+      "holeLoops": 0,
+      "trimeshWatertight": true,
+      "trimeshWindingConsistent": true,
+      "passed": true
+    },
+    {
+      "name": "UF_Floor_edge_wing_R",
+      "vertices": 2064,
+      "triangles": 4124,
+      "finiteVertices": true,
+      "nonTwoSidedGeometricEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "zeroAreaFaces": 0,
+      "minimumArea_m2": 5.555951565483497e-07,
+      "signedVolume_m3": 0.00021653830145181022,
+      "crossingPairs": 0,
+      "touchingOrCrossingPairs": 0,
+      "holeLoops": 0,
+      "trimeshWatertight": true,
+      "trimeshWindingConsistent": true,
+      "passed": true
+    }
+  ],
+  "assembly": {
+    "passed": true,
+    "assemblyAudit": {
+      "vertices": 99153,
+      "triangles": 182488,
+      "finiteVertices": true,
+      "nonTwoSidedGeometricEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "zeroAreaFaces": 0,
+      "minimumArea_m2": 1.6458319178423632e-09,
+      "signedVolume_m3": 0.04446523799537772,
+      "crossingPairs": 0,
+      "touchingOrCrossingPairs": 0,
+      "holeLoops": 0
+    },
+    "boundedNumericalCleanup": {
+      "maxDeviationSetting_m": 1e-05,
+      "bidirectionalVertexAndCentroidSamples": [
+        {
+          "samples": 297455,
+          "maximum_m": 2.8211381504661404e-05
+        },
+        {
+          "samples": 273734,
+          "maximum_m": 7.615003596583847e-06
+        }
+      ]
+    },
+    "openfoam": {
+      "returnCode": 0,
+      "closed": true,
+      "noIllegalTriangles": true,
+      "noSelfIntersections": true
+    },
+    "sha256": "9857347b197cacc023d4d34e5be4de6ac698a93ab22d013dd58b0e634d198d20",
+    "nativeSHA256": "50675b4949bba71be395cdf1c55a6f8aca772fa0617d3467ba03f2881b7cf8fd",
+    "scope": "new underfloor/diffuser + six inlet vanes + two floor-edge blades only",
+    "wholeCarCFDReady": false,
+    "components": 1
+  },
+  "sourceSkinJoin": {
+    "movedPositionKeys": 808,
+    "maximum_m": 0.06311985633207684,
+    "method": "only newly cut boundary vertices; nearest floor65mm cap;1mm penetration"
+  },
+  "protectedWingsWheelsSuspensionUnchanged": true,
+  "protectedGeometrySHA256": "11b4fae6b9eba4b7f4a20d91d48d29a94b6cd1acfea898dbe7e5f14bf21fc3d0",
+  "sampledPassages": [
+    {
+      "side": -1,
+      "lane": 1,
+      "blocked": false,
+      "minimumSampledSolidClearance_m": 0.04702816531062126
+    },
+    {
+      "side": -1,
+      "lane": 2,
+      "blocked": false,
+      "minimumSampledSolidClearance_m": 0.057131968438625336
+    },
+    {
+      "side": -1,
+      "lane": 3,
+      "blocked": false,
+      "minimumSampledSolidClearance_m": 0.025562265887856483
+    },
+    {
+      "side": 1,
+      "lane": 1,
+      "blocked": false,
+      "minimumSampledSolidClearance_m": 0.04702816531062126
+    },
+    {
+      "side": 1,
+      "lane": 2,
+      "blocked": false,
+      "minimumSampledSolidClearance_m": 0.057131968438625336
+    },
+    {
+      "side": 1,
+      "lane": 3,
+      "blocked": false,
+      "minimumSampledSolidClearance_m": 0.025562265887856483
+    }
+  ],
+  "sampledSidepodBypasses": [
+    {
+      "side": -1,
+      "blocked": false,
+      "minimumSampledSolidClearance_m": 0.03603767231106758
+    },
+    {
+      "side": 1,
+      "blocked": false,
+      "minimumSampledSolidClearance_m": 0.036070566624403
+    }
+  ],
+  "DRS_frames": 16,
+  "packedTexturesMissing": 0,
+  "currentWholeCarCFDSurfaceAccepted": false,
+  "solverStarted": false,
+  "limitations": [
+    "Photo-informed mixed2023 reconstruction, not measured CAD",
+    "Sampled geometric paths are not streamlines or a global clearance proof",
+    "Underbody-only surface acceptance does not accept the whole car, volume mesh or aerodynamics"
+  ]
+}

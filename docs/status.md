@@ -2,6 +2,34 @@
 
 Snapshot: **18 October 2026**, a saved status rather than a live monitor.
 
+## Continuous floor, diffuser and sidepod undercut
+
+The current native file has a reconstructed continuous underfloor/diffuser,
+six swept internal inlet vanes, two floor-edge blades and a deeper sidepod
+undercut. A common displacement field preserves UV continuity across source
+mesh islands. Newly cut lower-skin boundary vertices were joined to the new
+floor within a bounded 65 mm search, with 1 mm penetration for subsequent union.
+This is a new reconstruction, not a small-tolerance comparison to team CAD.
+
+Nine new components pass watertightness, winding, positive-volume, degenerate-face
+and self-intersection checks. Their union has 182,488 triangles and passes
+OpenFOAM surfaceCheck for closure, illegal triangles and self-intersections.
+Boolean-generated tiny triangles were cleaned with a 10 micrometre nominal
+deviation setting; bidirectional vertex/centroid samples were below 30 micrometres.
+This numerical cleanup is distinct from the larger intentional redesign.
+
+Six native underfloor paths and two sidepod bypass paths do not intersect the
+checked car triangles. Their smallest sampled solid distance is 25.56 mm.
+The new floor does not cross the checked wheels, suspension or brake fins.
+Packed textures and 16 DRS positions were checked after the body edits.
+The floor-only acceptance does not validate the remaining artist-model shell,
+body/wing transitions, volume mesh or aerodynamic solution.
+
+[Reference assumptions](underbody-references.md) and
+[current underbody evidence](../evidence/underbody-summary.json) describe the
+mixed 2023 interpretation and exact native-file identity. Prior wing evidence
+remains scoped to the unchanged wing components.
+
 ## Photo-informed wings and working DRS
 
 The reconstruction uses four front-wing elements per side, a spoon-shaped rear mainplane, rolled outer tips, a separate moving flap, adapted lower endplates/swan-neck and two beam-wing elements. BYBIT faces forward/top with a gold I, and ORACLE faces rearward. Photographs guided layout and silhouette; they do not establish calibrated profiles, exact race trim, dimensions or hinge geometry.
@@ -12,7 +40,7 @@ DRS rotates the flap approximately **18.545 degrees** about one fixed spanwise h
 
 ## CFD surface and mesh
 
-Retained front nose/tip transition cuts and lower rear endplates need a fresh CFD export and union/repair for the selected DRS state. Passing individual new components does not establish a closed whole-car fluid boundary.
+Retained body/floor joins, front nose/tip transition cuts and lower rear endplates need a fresh whole-car CFD export and union/repair for the selected DRS state. Passing individual new components does not establish a closed whole-car fluid boundary.
 
 The previous **2,114,416-triangle** accepted surface belongs to the preceding wing revision. It remains historical inside the native project and is omitted from new exports. The **3,154,323-cell volume checkpoint** is older still. Neither is current acceptance evidence, and the old mesh must not be resumed against these wings.
 
