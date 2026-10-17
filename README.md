@@ -1,78 +1,73 @@
 # RB19 CFD Lab
 
-**Geometry refinement, verification, and a resource-bounded virtual wind tunnel — co-designed and developed by Phoom & OpenAI Codex.**
+**Photo-informed RB19 geometry and working Blender DRS, co-designed and developed by Phoom & OpenAI Codex.** The OpenFOAM virtual wind tunnel remains in preparation.
 
-This project adapts an attributed RB19 artist model into a detailed Blender study and an OpenFOAM 14 workflow. It documents both the geometry work and the engineering needed to preserve progress on a memory-constrained workstation.
+![Current RB19 model](assets/hero.png)
 
-![Three-quarter studio render of the modified RB19 model](assets/hero.png)
+*Modified from [Redgrund's “Oracle Red Bull F1 Car RB19 2023”](https://sketchfab.com/3d-models/oracle-red-bull-f1-car-rb19-2023-e4afe46f3aab4b23a418da06fc163821), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Model-derived images and animation retain that license. [Attribution and changes](ATTRIBUTION.md).*
 
-*Project render of a modified model based on [Redgrund's “Oracle Red Bull F1 Car RB19 2023”](https://sketchfab.com/3d-models/oracle-red-bull-f1-car-rb19-2023-e4afe46f3aab4b23a418da06fc163821). Model-derived renders are shared under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Full credit and changes: [ATTRIBUTION.md](ATTRIBUTION.md).*
+## Working DRS
 
-## What we built
+![Native Blender DRS opens and closes](assets/DRS-motion.gif)
 
-- Reconstructed rear-wing sections with physical thickness, continuous camber, and a retained slot and spoon profile.
-- Refined the floor-to-diffuser transition, diffuser roof, outer walls, and central spine using public photographs as visual references.
-- Kept detailed display geometry and a repaired CFD surface separate, with recorded identities linking the native Blender project to the accepted surface.
-- Built staged OpenFOAM meshing, per-job RAM/swap limits, host-memory monitoring, cell-budget checks, and native checkpoint handling.
-- Added evidence gates so a saved surface, a saved volume mesh, and a completed flow solution are reported as distinct milestones.
+This animation contains actual frames rendered from the saved Blender project. Only the upper flap, its markings and moving actuator lug rotate about the fixed hinge; the mainplane, endplates, swan-neck and beam wing stay fixed. A telescopic link follows the moving lug. BYBIT remains on the forward/top wing surfaces with a gold I; ORACLE is on the rear flap.
+
+The single local `RB19.blend` contains `CTRL_DRS` with a 0–1 custom property. Frame 1/120 is closed and frame 60 is open; the timeline plays a four-second demonstration. No addon is required.
 
 ## Current evidence
 
-Snapshot: **17 October 2026**. The rear wing has been corrected after review of its over-steep flap.
+Snapshot: **18 October 2026**. Front and rear wings were reconstructed following photo review. Exact race-car dimensions and aerodynamic performance are not established.
 
-| Milestone | Confirmed status |
+| Check | Observed result |
 |---|---|
-| Upper flap at central span | Approximately **75.8° → 45°** from horizontal; outer target about 42° |
-| Mainplane, rolled tips and support | Reshaped with the flap; upper trailing edge kept near a common fore-aft station |
-| Revised surface | Closed, consistent winding, zero self-intersections in independent and OpenFOAM checks; **2,114,416 triangles**, 7 patches |
-| Revised slot inspection | **12 sections / 372 interior probes**, no solid hits; sampled clearance **6.364–15.598 mm** |
-| Single native project | Saved, reopened, and its embedded CFD triangle buffers checked |
-| Previous volume-mesh checkpoint | **3,154,323 cells for the old wing only**; cannot be reused for this geometry |
-| New volume mesh and flow solver | **Not started for the revised shape** |
-| Validated aerodynamic results | **Not available** |
+| New wing geometry | 14 closed components: eight front elements, mainplane, flap, two rolled tips and two beam elements |
+| Component topology | Watertight, consistent winding, positive volume and zero self-intersection pairs in independent checks |
+| Native file | Reopened with packed textures; returns to the same closed state |
+| DRS motion | 16 sampled states; no moving-flap crossings with the checked fixed wing bodies |
+| Rear slot | 39 sampled sections per state: closed **17.08–22.04 mm**, open **66.38–81.99 mm** |
+| Front slots | 54 sampled sections; minimum sampled gap **7.18 mm** |
+| Whole-car CFD surface | **Requires a fresh state-specific export, transition repair and union** |
+| Volume mesh and solver | No accepted mesh or aerodynamic solution for these wings |
 
-The angles are reconstruction choices informed by photographs, not measured Red Bull CAD. DRS remains in the modeled closed configuration. The images show geometry, not pressure fields or wind-tunnel measurements.
+The sampled checks are not a continuous clearance proof or FIA compliance certification. The previous repaired CFD surface and **3,154,323-cell checkpoint belong to older geometry**. They cannot be reused as current acceptance evidence. [Status and acceptance criteria](docs/status.md) · [Compact evidence](evidence/README.md).
 
-The previous mesher was stopped intentionally when Phoom requested the wing correction. The next CFD step requires a **new geometry contract, new slot-refinement boxes, and a fresh volume mesh**. Details are in [status and acceptance criteria](docs/status.md).
+## Geometry views
 
-## Geometry details
-
-| Diffuser reconstruction | Underfloor view |
+| DRS closed | DRS open |
 |---|---|
-| ![Close view of the reconstructed diffuser](assets/diffuser.png) | ![Underside view of the modified model](assets/underfloor.png) |
+| ![Closed rear wing](assets/rear-closed-photo.png) | ![Open rear wing](assets/rear-open-photo.png) |
 
-![Original and reconstructed rear-wing cross sections](assets/rear-wing-section-comparison.png)
+![Reconstructed four-element front wing](assets/front-refined.png)
 
-The teal profiles show the corrected CFD sections; grey shows the preceding over-steep wing. The mainplane and flap were reshaped together while retaining a narrow open slot. Thickness, chord angles and unseen details are modeling assumptions. This study does not claim one exact race specification.
+| Diffuser | Underfloor |
+|---|---|
+| ![Diffuser geometry](assets/diffuser.png) | ![Underfloor geometry](assets/underfloor.png) |
 
-![Corrected rear-wing assembly](assets/rear-wing-front.png)
-
-[Side view](assets/rear-wing-side.png) · [Rear view](assets/rear.png) · [Full-car side view](assets/side.png)
+[Full-car side](assets/side.png) · [Rear view](assets/rear.png) · [Front view](assets/front.png)
 
 ## Planned flow setup
 
-The case is configured for a **50 m/s** inlet, moving ground, rotating-wheel wall conditions, and a steady external-aerodynamics workflow. The reference area is an **assumed 1.5 m² comparison convention**, not a measured frontal area. These are setup choices; solver execution and aerodynamic acceptance are still pending.
+The local OpenFOAM 14 workflow is configured for a **50 m/s** inlet, moving ground and rotating-wheel wall conditions. State-specific surface validation, a fresh mesh, resolved wing passages, wall treatment, residuals, mass balance and force stability must pass before reporting aerodynamic results. The 1.5 m² reference area is an assumed comparison convention.
 
-The current work prioritizes a recoverable, auditable mesh before any force-coefficient claim. [Engineering notes](docs/engineering.md) explain the geometry pipeline, checkpoint distinction, and acceptance gates.
+The workflow includes finite job memory/swap limits, Windows-host headroom checks, stage checkpoints and evidence gates. [Engineering notes](docs/engineering.md) explain these distinctions.
 
 ## Explore the repository
 
 - [Contribution and co-development credits](CONTRIBUTIONS.md)
 - [Model provenance and licenses](ATTRIBUTION.md)
-- [Current status and remaining checks](docs/status.md)
-- [Compact technical evidence](evidence/README.md)
+- [Current status](docs/status.md)
 - [Runnable MPI checkpoint parser](src/checkpoint_log.py) and [its tests](tests/test_checkpoint_log.py)
 
-Run the lightweight example with Python 3.10 or later; no Blender, OpenFOAM, or external packages are needed:
+Run the public parser example with Python 3.10 or later:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-This is a curated portfolio snapshot. The large native model, original asset bundle, volume-mesh checkpoints, full machine-specific controller, and third-party reference photographs are not distributed here. The included parser tests demonstrate one reusable part of the workflow; they do not run or validate CFD.
+This is a curated portfolio. The large native model, full machine-specific workflow, mesh checkpoints and third-party reference photographs remain local. Parser tests do not run or validate CFD.
 
 ## Credits and scope
 
-**Phoom & OpenAI Codex co-designed and developed the project-specific modifications, automation, validation, and presentation.** Redgrund created the base artist model. The real RB19 is a Red Bull Racing car; neither Phoom nor Codex designed the original race car or the original artist mesh.
+**Phoom & OpenAI Codex co-designed and developed the project-specific modifications, automation, validation and presentation.** Redgrund created the base artist model. Red Bull Racing designed the real RB19.
 
-This independent study is not official Red Bull CAD and is not affiliated with or endorsed by Red Bull Racing, Formula 1, the model creator, or the depicted sponsors. Marks remain with their respective owners. Code licensing and model-derived image licensing are separated in [LICENSES.md](LICENSES.md).
+This independent study is not official team CAD and does not imply endorsement by Red Bull Racing, Formula 1, the artist or sponsors. [Code and model-image licensing](LICENSES.md).

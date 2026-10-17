@@ -4,23 +4,21 @@
 
 ```mermaid
 flowchart LR
-    A[Attributed artist model] --> B[Photo-informed geometry adaptations]
-    B --> C[Detailed Blender display]
-    B --> D[Closed CFD surface and patch identities]
-    D --> E[Surface and clearance checks]
-    E --> F[Staged OpenFOAM mesh]
-    F --> G[Saved checkpoint audit passed]
-    G -. acceptance still pending .-> H[Final mesh quality gates]
-    H -. future .-> I[Flow solution and validation]
+    A[Attributed artist model] --> B[Photo-informed wings and native DRS]
+    B --> C[Component and motion checks passed]
+    C -. next .-> D[Export chosen DRS state and repair transitions]
+    D --> E[Whole-car surface acceptance]
+    E --> F[Fresh volume mesh and quality gates]
+    F --> G[Flow solution and validation]
 ```
 
-The visible model retains visual detail and textures. The CFD surface is separately repaired and simplified where needed for an external-flow approximation. Recorded hashes and embedded geometry checks associate those artifacts without pretending that every visible detail is represented identically in the solver surface.
-
-The final surface record reports 7 patches: `body`, `frontWing`, `rearWing`, and four wheel patches. The floor is included within the body patch in this accepted surface.
+The current visible wings have independent component and motion checks. Retained transition surfaces need a fresh CFD export, union and repair. The older accepted seven-patch surface remains historical, not a representation of these new wings. Its patch scheme was body, frontWing, rearWing and four wheels, with the floor included in body.
 
 ## Physical reconstruction choices
 
-The rear-wing study first replaced thin central artist skins with closed physical sections. The 17 October correction then reduced the central flap chord angle from about 75.8 to 45 degrees and reshaped the mainplane, rolled ends and support together. The current section chart documents that incidence correction. The old volume checkpoint and refinement boxes cannot be reused for this shape. Nominal section thicknesses and internal details are reconstruction assumptions; perspective photographs cannot establish exact aerodynamic profiles.
+The 18 October reconstruction uses four front elements per side, a rear spoon mainplane, rolled tips, an independent hinged flap, adapted endplates/swan-neck and two beam elements. Fourteen closed components passed independent topology/self-intersection checks. Native DRS motion was checked at 16 frames, rear slots at 39 sections per state and front slots at 54 sections. The preceding 17 October incidence correction is historical.
+
+The DRS opening is approximately 18.545 degrees. The design uses a sampled 82 mm slot target below the 85 mm ceiling described in [FIA 2023 Technical Regulations, Issue 6, Article 3.10.10](https://www.fia.com/sites/default/files/fia_2023_formula_1_technical_regulations_-_issue_6_-_2023-04-25.pdf). This does not certify the entire model against FIA regulations. Profiles, thicknesses and unseen details remain assumptions; perspective photos cannot establish exact aerodynamic sections.
 
 The diffuser work addresses the floor transition, roof, outer walls, and central spine. References span several 2023 events. They support visible shape features but do not establish a single exact race trim or hidden internal geometry.
 

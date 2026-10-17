@@ -1,64 +1,336 @@
 {
-  "schema": "rb19-public-geometry-evidence-v2",
-  "recordedAt": "2026-10-17T00:31:57.166413+07:00",
-  "source": "Selected current results from fresh local surface checks and reopened native triangle buffers; large geometry is not distributed here.",
-  "surface": {
-    "passed": true,
-    "surfaceSHA256": "f689f0f81d59c549de3600aac99aabac33b83b26ce73c4a1923ece0cd5addbef",
-    "triangles": 2114416,
-    "vertices": 1054066,
-    "watertight": true,
-    "consistentWinding": true,
-    "selfIntersections": 0,
-    "holes": 0,
-    "openFOAMCheckPassed": true,
-    "sourceReportSHA256": "389125caca10480dfeae64fe14f6011ba4dcce1ff390cf6e386b78d903011558",
-    "patchTriangles": {
-      "body": 1146133,
-      "frontWing": 305413,
-      "rearWing": 244130,
-      "wheelFL": 103219,
-      "wheelFR": 101075,
-      "wheelRL": 106174,
-      "wheelRR": 108272
+  "schema": "rb19-public-wing-evidence-v3",
+  "recordedAt": "2026-10-18T00:16:05.051244+07:00",
+  "nativeSHA256": "b2912910ce2388c8fd392f0310625bd43f0c9db5407d609b897fcfbb40006f30",
+  "nativeReopenPassed": true,
+  "packedTexturesMissing": 0,
+  "newClosedComponents": [
+    {
+      "name": "RW_Mainplane_spoon",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.0036347946346760216,
+      "independentMeshlibAudit": {
+        "vertices": 15617,
+        "triangles": 31230,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 1.7089860193664208e-07,
+        "signedVolume_m3": 0.003634794634676098,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "RW_DRS_Flap",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.0008071509410714888,
+      "independentMeshlibAudit": {
+        "vertices": 9603,
+        "triangles": 19202,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 5.12368387717288e-08,
+        "signedVolume_m3": 0.0008071509410714759,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "RW_Rolled_flap_tip_-1",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.00015619805099199627,
+      "independentMeshlibAudit": {
+        "vertices": 3977,
+        "triangles": 7950,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 7.73979991208762e-09,
+        "signedVolume_m3": 0.0001561980509920337,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "RW_Rolled_flap_tip_1",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.00015564319494735095,
+      "independentMeshlibAudit": {
+        "vertices": 3977,
+        "triangles": 7950,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 7.73979991208762e-09,
+        "signedVolume_m3": 0.00015564319494735385,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "RW_Beam_wing_1",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.0009872310478558598,
+      "independentMeshlibAudit": {
+        "vertices": 7857,
+        "triangles": 15710,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 7.357675713137724e-08,
+        "signedVolume_m3": 0.0009872310478558687,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "RW_Beam_wing_2",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.0006704679124273511,
+      "independentMeshlibAudit": {
+        "vertices": 7857,
+        "triangles": 15710,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 4.9094524001702666e-08,
+        "signedVolume_m3": 0.0006704679124273706,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "FW_Element_1_R",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.0010200741265495865,
+      "independentMeshlibAudit": {
+        "vertices": 7275,
+        "triangles": 14546,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 5.59939508093521e-08,
+        "signedVolume_m3": 0.0010200741265495865,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "FW_Element_1_L",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.001019944284085937,
+      "independentMeshlibAudit": {
+        "vertices": 7275,
+        "triangles": 14546,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 5.59939508093521e-08,
+        "signedVolume_m3": 0.001019944284085937,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "FW_Element_2_R",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.0009011777651918348,
+      "independentMeshlibAudit": {
+        "vertices": 7275,
+        "triangles": 14546,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 7.129528967197984e-08,
+        "signedVolume_m3": 0.0009011777651918348,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "FW_Element_2_L",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.0009010856334596535,
+      "independentMeshlibAudit": {
+        "vertices": 7275,
+        "triangles": 14546,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 7.129528967197984e-08,
+        "signedVolume_m3": 0.0009010856334596535,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "FW_Element_3_R",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.00037846531584597695,
+      "independentMeshlibAudit": {
+        "vertices": 7275,
+        "triangles": 14546,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 2.3686425265623257e-08,
+        "signedVolume_m3": 0.00037846531584597695,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "FW_Element_3_L",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.0003784449526601762,
+      "independentMeshlibAudit": {
+        "vertices": 7275,
+        "triangles": 14546,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 2.3686425265623257e-08,
+        "signedVolume_m3": 0.0003784449526601762,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "FW_Element_4_R",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.00028547490799305284,
+      "independentMeshlibAudit": {
+        "vertices": 7275,
+        "triangles": 14546,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 1.9350864022271708e-08,
+        "signedVolume_m3": 0.00028547490799305284,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    },
+    {
+      "name": "FW_Element_4_L",
+      "watertight": true,
+      "consistentWinding": true,
+      "volume": 0.00028532077618465744,
+      "independentMeshlibAudit": {
+        "vertices": 7275,
+        "triangles": 14546,
+        "finiteVertices": true,
+        "nonTwoSidedGeometricEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "zeroAreaFaces": 0,
+        "minimumArea_m2": 1.9350864022271708e-08,
+        "signedVolume_m3": 0.00028532077618465744,
+        "crossingPairs": 0,
+        "touchingOrCrossingPairs": 0,
+        "holeLoops": 0
+      }
+    }
+  ],
+  "DRS": {
+    "controlObject": "CTRL_DRS",
+    "property": "DRS",
+    "range": [
+      0,
+      1
+    ],
+    "hinge_m": [
+      5.326,
+      0.0,
+      0.971
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "opening_deg": 18.54497555270791,
+    "sampledClosedGap_m": {
+      "min": 0.017072477649242628,
+      "max": 0.022036224983253718
+    },
+    "sampledOpenGap_m": {
+      "min": 0.06637720752656577,
+      "max": 0.08199999999768846
+    },
+    "stations": 39,
+    "frames": {
+      "closed": 1,
+      "open": 60
     }
   },
-  "native": {
-    "reopenPassed": true,
-    "recordedNativeSHA256": "78f74ab77b645bcbd8ae2d88d197ca2037583d62203c459197e2e1dc43b30f31",
-    "reopenedBlenderVersion": "4.0.2",
-    "sourceReportSHA256": "970f36dfc85f793255c02f3bca3f8084cd29fc82d1b3be8e5770032678a8ce0d"
-  },
-  "rearWing": {
-    "centralAngleBefore_deg": 75.78171502754348,
-    "centralAngleAfter_deg": 45.000681056822735,
-    "outerTarget_deg": 42,
-    "anglesAreReconstructionAssumptions": true,
-    "DRS": "modeled closed"
-  },
-  "clearanceProbes": {
-    "passed": true,
-    "sections": 12,
-    "points": 372,
-    "solidHits": 0,
-    "minimumSampledGap_m": 0.006364001889057102,
-    "maximumSampledGap_m": 0.015598410545168367,
-    "method": "Independent planar sections of the revised repaired rear-wing STL and 31 interior samples per shortest section-gap line.",
-    "limitations": [
-      "Finite samples are not a global full-span clearance proof.",
-      "New volume-mesh resolution and aerodynamic convergence are still required."
-    ]
-  },
-  "numericalRegularizationMaximumMotion_m": 1.0004751039628373e-05,
-  "otherPatchMaximumVertexMotion_m": {
-    "body": 1.0004751039628373e-05,
-    "frontWing": 0.0,
-    "wheelFL": 0.0,
-    "wheelFR": 0.0,
-    "wheelRL": 0.0,
-    "wheelRR": 0.0
-  },
-  "fluidMeshAccepted": false,
+  "sampledNativeRearSlots": [
+    {
+      "state": "closed",
+      "minGap_m": 0.01707795440912508,
+      "maxGap_m": 0.022037256028184644,
+      "sections": 39
+    },
+    {
+      "state": "open",
+      "minGap_m": 0.0663829433523702,
+      "maxGap_m": 0.0819927358314563,
+      "sections": 39
+    }
+  ],
+  "frontSections": 54,
+  "frontMinimumSlot_m": 0.0071758368171458775,
+  "motionFrames": 16,
+  "movingFlapFixedBodyCrossingPairs": 0,
+  "staticBodiesStayedFixed": true,
+  "closedStateRecovered": true,
+  "currentWholeCarCFDSurfaceAccepted": false,
+  "currentVolumeMeshAccepted": false,
   "solverStarted": false,
-  "aerodynamicPerformanceValidated": false
+  "limitations": [
+    "Discrete span sections and16 animation states are sampled checks, not a continuous global clearance proof.",
+    "Retained endplate and front tip/nose transition surfaces still need a new CFD union/repair after this reconstruction.",
+    "No new whole-car surface acceptance, volume mesh or CFD result is claimed."
+  ],
+  "sourceValidationSHA256": "df2c90699c235fd0b89559c97fc4d648570795ebee4af5d431e4bfa6945b6b89"
 }

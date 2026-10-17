@@ -12,7 +12,7 @@ This credit describes the work on this study. It is not a claim of authorship of
 
 | Area | Project contribution |
 |---|---|
-| Geometry | Scale/alignment, rear-wing physical section reconstruction, floor/diffuser refinements, and component organization |
+| Geometry | Scale/alignment, front/rear wing reconstruction, fixed-hinge DRS and actuator, floor/diffuser refinements, and component organization |
 | CFD surface | Closed-surface repair, solid union, junction repair, patch assignment, and recorded geometry identities |
 | Workflow | OpenFOAM case preparation, staged meshing, checkpoint capture/promotion, cell-budget checks, and evidence gates |
 | Resource control | Finite per-job RAM/swap limits and independent host-memory monitoring |
