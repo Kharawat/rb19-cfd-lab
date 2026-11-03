@@ -1,10 +1,31 @@
 # RB19 CFD Lab
 
-**Photo-informed RB19 geometry, continuous underfloor/diffuser and working Blender DRS, co-designed and developed by Phoom & OpenAI Codex.** The OpenFOAM virtual wind tunnel remains in preparation.
+**A personal F1 passion project: a photo-informed RB19 model with a rebuilt continuous underfloor and diffuser, reconstructed wings and a working Blender DRS, co-designed and developed by Phoom & OpenAI Codex.** The OpenFOAM virtual wind tunnel is the next stage and has not produced aerodynamic results yet.
 
 ![Current RB19 model](assets/hero.png)
 
 *Modified from [Redgrund's “Oracle Red Bull F1 Car RB19 2023”](https://sketchfab.com/3d-models/oracle-red-bull-f1-car-rb19-2023-e4afe46f3aab4b23a418da06fc163821), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Model-derived images and animation retain that license. [Attribution and changes](ATTRIBUTION.md).*
+
+## Why this exists
+
+I love Formula 1, and the RB19 is one of the most dominant cars the sport has seen. This project is a way to study it with the tools a mechanical engineer actually uses: take a public artist model, rebuild the parts that matter aerodynamically from race-weekend photographs, prove the geometry is clean, and get it ready for a virtual wind tunnel. It is an independent study, not team CAD.
+
+## Progress at a glance
+
+Snapshot: **18 October 2026** (geometry revision `continuous-underbody-sidepod-diffuser-20261018`).
+
+| Stage | Status |
+|---|---|
+| Base model, scale and alignment | ✅ Done |
+| Front wing: four elements per side, rolled tips | ✅ Done, 14 closed components pass topology checks |
+| Rear wing, beam wing and fixed-hinge DRS | ✅ Done, 16 DRS states checked with no flap crossings |
+| Continuous underfloor, stepped diffuser, sidepod undercut | ✅ Done, underbody-only union passes OpenFOAM `surfaceCheck` |
+| Whole-car CFD surface for one DRS state | ⏳ Next: export, repair transitions, union |
+| Volume mesh for the current geometry | ⬜ Not started |
+| 50 m/s moving-ground solver run | ⬜ Not started |
+| Validated drag / downforce | ⬜ Not available yet |
+
+Machine-readable status: [evidence/status.json](evidence/status.json) · Full detail: [docs/status.md](docs/status.md) · Portfolio: [kharawat.github.io/portfolio](https://kharawat.github.io/portfolio/)
 
 ## Latest underbody reconstruction
 
